@@ -8,10 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.navigation.fragment.findNavController
-import com.example.foodyudemy.Constants.Companion.DEFAULT_DIET_TYPE
-import com.example.foodyudemy.Constants.Companion.DEFAULT_MEAL_TYPE
-import com.example.foodyudemy.R
-import com.example.foodyudemy.databinding.FragmentRecipesBinding
+import com.example.foodyudemy.util.Constants.Companion.DEFAULT_DIET_TYPE
+import com.example.foodyudemy.util.Constants.Companion.DEFAULT_MEAL_TYPE
 import com.example.foodyudemy.databinding.RecipesBottomSheetBinding
 import com.example.foodyudemy.viewmodels.RecipesViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

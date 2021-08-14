@@ -1,18 +1,37 @@
 package com.example.foodyudemy.bindingadapters
 
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
+import androidx.navigation.findNavController
 import coil.load
 import com.example.foodyudemy.R
+import com.example.foodyudemy.models.Result
+import com.example.foodyudemy.ui.fragments.recipes.RecipesFragmentDirections
+import org.jsoup.Jsoup
+import java.lang.Exception
 
 class RecipeRowBinding {
 
     companion object {
 
-
+        @BindingAdapter("onRecipeClickListener")
+        @JvmStatic
+        fun onRecipeClickListener(recipeRowLayout: ConstraintLayout, result: Result) {
+            Log.d("onRecipeClickListener", "CALLED")
+            recipeRowLayout.setOnClickListener {
+                try {
+                    val action = RecipesFragmentDirections.actionRecipesFragmentToDetailsActivity(result)
+                    recipeRowLayout.findNavController().navigate(action)
+                } catch (e: Exception) {
+                    Log.d("onRecipeClickListener", e.toString())
+                }
+            }
+        }
 
         @BindingAdapter("loadImageFromUrl")
         @JvmStatic
@@ -23,18 +42,18 @@ class RecipeRowBinding {
             }
         }
 
-        @BindingAdapter("setNumberOfLikes")
-        @JvmStatic
-        fun setNumberOfLikes(textView: TextView, likes: Int) {
-            textView.text = likes.toString()
-        }
-
-
-        @BindingAdapter("setNumberOfMinutes")
-        @JvmStatic
-        fun setNumberOfMinutes(textView: TextView, minutes: Int) {
-            textView.text = minutes.toString()
-        }
+//        @BindingAdapter("setNumberOfLikes")
+//        @JvmStatic
+//        fun setNumberOfLikes(textView: TextView, likes: Int) {
+//            textView.text = likes.toString()
+//        }
+//
+//
+//        @BindingAdapter("setNumberOfMinutes")
+//        @JvmStatic
+//        fun setNumberOfMinutes(textView: TextView, minutes: Int) {
+//            textView.text = minutes.toString()
+//        }
 
 
         @BindingAdapter("applyVeganColor")
@@ -59,6 +78,15 @@ class RecipeRowBinding {
                         )
                     }
                 }
+            }
+        }
+
+        @BindingAdapter("parseHtml")
+        @JvmStatic
+        fun parseHtml(textView: TextView, desciption: String?) {
+            if(desciption != null) {
+                val desc = Jsoup.parse(desciption).text()
+                textView.text = desc
             }
         }
 

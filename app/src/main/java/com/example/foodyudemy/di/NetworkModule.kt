@@ -1,6 +1,6 @@
 package com.example.foodyudemy.di
 
-import com.example.foodyudemy.Constants.Companion.BASE_URL
+import com.example.foodyudemy.util.Constants.Companion.BASE_URL
 import com.example.foodyudemy.data.network.FoodRecipeApi
 import dagger.Module
 import dagger.Provides

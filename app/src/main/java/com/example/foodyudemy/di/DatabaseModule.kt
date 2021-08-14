@@ -2,7 +2,7 @@ package com.example.foodyudemy.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.foodyudemy.Constants.Companion.DATABASE_NAME
+import com.example.foodyudemy.util.Constants.Companion.DATABASE_NAME
 import com.example.foodyudemy.data.database.RecipesDatabase
 import dagger.Module
 import dagger.Provides
