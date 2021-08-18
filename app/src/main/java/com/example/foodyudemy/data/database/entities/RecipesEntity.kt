@@ -1,4 +1,4 @@
-package com.example.foodyudemy.data.database
+package com.example.foodyudemy.data.database.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

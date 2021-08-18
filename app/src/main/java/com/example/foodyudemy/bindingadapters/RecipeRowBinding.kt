@@ -42,18 +42,18 @@ class RecipeRowBinding {
             }
         }
 
-//        @BindingAdapter("setNumberOfLikes")
-//        @JvmStatic
-//        fun setNumberOfLikes(textView: TextView, likes: Int) {
-//            textView.text = likes.toString()
-//        }
-//
-//
-//        @BindingAdapter("setNumberOfMinutes")
-//        @JvmStatic
-//        fun setNumberOfMinutes(textView: TextView, minutes: Int) {
-//            textView.text = minutes.toString()
-//        }
+        @BindingAdapter("setNumberOfLikes")
+        @JvmStatic
+        fun setNumberOfLikes(textView: TextView, likes: Int) {
+            textView.text = likes.toString()
+        }
+
+
+        @BindingAdapter("setNumberOfMinutes")
+        @JvmStatic
+        fun setNumberOfMinutes(textView: TextView, minutes: Int) {
+            textView.text = minutes.toString()
+        }
 
 
         @BindingAdapter("applyVeganColor")
@@ -83,9 +83,9 @@ class RecipeRowBinding {
 
         @BindingAdapter("parseHtml")
         @JvmStatic
-        fun parseHtml(textView: TextView, desciption: String?) {
-            if(desciption != null) {
-                val desc = Jsoup.parse(desciption).text()
+        fun parseHtml(textView: TextView, description: String?) {
+            if(description != null) {
+                val desc = Jsoup.parse(description).text()
                 textView.text = desc
             }
         }
