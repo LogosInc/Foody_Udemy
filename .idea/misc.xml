@@ -4,16 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/drawable/gradient_overlay.xml" value="0.2856410256410256" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/drawable/ic_splash_screen_light.xml" value="0.29010416666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/activity_details.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/favorite_recipe_row_layout.xml" value="0.45695364238410596" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/favorite_recipe_row_layout.xml" value="0.43204868154158216" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/fragment_favorites_recipes.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/fragment_food_joke.xml" value="0.10727969348659004" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/fragment_ingredients.xml" value="0.27395833333333336" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/fragment_instructions.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/fragment_overview.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/fragment_recipes.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/ingredients_row_layout.xml" value="0.4" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/recipes_row_layout.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/layout/recipes_row_layout.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/menu/details_menu.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/menu/favorite_contextual_menu.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/menu/favorite_recipe_menu.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FoodyUdemy/app/src/main/res/menu/food_joke_menu.xml" value="0.27395833333333336" />
       </map>
     </option>
   </component>

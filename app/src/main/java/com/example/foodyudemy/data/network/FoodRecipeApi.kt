@@ -1,5 +1,6 @@
 package com.example.foodyudemy.data.network
 
+import com.example.foodyudemy.models.FoodJoke
 import com.example.foodyudemy.models.FoodRecipe
 import retrofit2.Response
 import retrofit2.http.GET
@@ -17,4 +18,9 @@ interface FoodRecipeApi {
     suspend fun searchRecipes(
         @QueryMap searchQueries: Map<String, String>
     ): Response<FoodRecipe>
+
+    @GET("food/jokes/random")
+    suspend fun getFoodJoke(
+        @Query("apiKey") apiKey: String
+    ) : Response<FoodJoke>
 }

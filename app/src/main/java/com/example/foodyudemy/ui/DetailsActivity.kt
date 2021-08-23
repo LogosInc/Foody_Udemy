@@ -81,7 +81,7 @@ class DetailsActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
             finish()
-        } else if(item.itemId == R.id.save_to_favorite_menu && recipeSaved) {
+        } else if(item.itemId == R.id.save_to_favorite_menu && !recipeSaved) {
             saveToFavorites(item)
         } else  if(item.itemId == R.id.save_to_favorite_menu && recipeSaved) {
             removeFromFavorites(item)
@@ -104,7 +104,6 @@ class DetailsActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Log.d("DetailsActivity", e.message.toString())
             }
-
         })
     }
 
