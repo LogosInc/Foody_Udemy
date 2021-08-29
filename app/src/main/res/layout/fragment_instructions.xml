@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.instructions.InstructionsFragment">
 
-
     <WebView
         android:id="@+id/instructions_webView"
         android:layout_width="409dp"

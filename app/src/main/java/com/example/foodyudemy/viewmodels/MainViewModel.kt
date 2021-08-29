@@ -22,12 +22,13 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     private val repository: Repository,
     application: Application
-): AndroidViewModel(application)  {
+) : AndroidViewModel(application) {
 
     /** ROOM DATABASE */
     // asLiveData use to convert readDatabase: Flow<List<RecipesEntity>> in LocalDataSource to LiveData
     val readRecipes: LiveData<List<RecipesEntity>> = repository.local.readRecipes().asLiveData()
-    val readFavoriteRecipes: LiveData<List<FavoritesEntity>> = repository.local.readFavoriteRecipes().asLiveData()
+    val readFavoriteRecipes: LiveData<List<FavoritesEntity>> =
+        repository.local.readFavoriteRecipes().asLiveData()
     val readFoodJoke: LiveData<List<FoodJokeEntity>> = repository.local.readFoodJoke().asLiveData()
 
     private fun insertRecipes(recipesEntity: RecipesEntity) =
@@ -71,8 +72,6 @@ class MainViewModel @Inject constructor(
     fun getFoodJoke(apiKey: String) = viewModelScope.launch {
         getFoodJokeSafeCall(apiKey)
     }
-
-
 
 
     private suspend fun getRecipesSafeCall(queries: Map<String, String>) {
@@ -126,7 +125,6 @@ class MainViewModel @Inject constructor(
             foodJokeResponse.value = NetworkResult.Error("No Internet Connection.")
         }
     }
-
 
 
     private fun offlineCacheRecipes(foodRecipe: FoodRecipe) {

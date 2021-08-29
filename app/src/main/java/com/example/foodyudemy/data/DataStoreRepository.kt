@@ -35,7 +35,6 @@ class DataStoreRepository @Inject constructor(@ApplicationContext private val co
 
     private val dataStore: DataStore<Preferences> = context.dataStore
 
-
     suspend fun saveMealAndDietType(mealType: String, mealTypeId: Int, dietType: String, dietTypeId: Int) {
         dataStore.edit { preferences ->
             preferences[PreferenceKeys.selectedMealType] = mealType

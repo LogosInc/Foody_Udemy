@@ -8,7 +8,6 @@
     app:layoutDescription="@xml/fragment_overview_scene"
     tools:context=".ui.fragments.overview.OverviewFragment">
 
-
     <ImageView
         android:id="@+id/main_imageView"
         android:layout_width="0dp"
@@ -47,7 +46,7 @@
         android:id="@+id/time_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="45"
+        android:text="@string/_45"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -70,7 +69,7 @@
         android:id="@+id/likes_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="100"
+        android:text="@string/_100"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -86,7 +85,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/courgette"
-        android:text="Title"
+        android:text="@string/title"
         android:textColor="@color/titleColor"
         android:textSize="22sp"
         android:textStyle="bold"

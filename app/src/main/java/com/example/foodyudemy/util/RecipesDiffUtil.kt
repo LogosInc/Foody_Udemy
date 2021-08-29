@@ -1,7 +1,6 @@
 package com.example.foodyudemy.util
 
 import androidx.recyclerview.widget.DiffUtil
-import com.example.foodyudemy.models.Result
 
 class RecipesDiffUtil<T>(
     private val oldList: List<T>,

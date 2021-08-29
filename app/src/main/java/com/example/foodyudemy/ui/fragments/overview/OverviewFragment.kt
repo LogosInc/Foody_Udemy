@@ -9,17 +9,16 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import coil.load
-import com.example.foodyudemy.util.Constants.Companion.RECIPE_RESULT_KEY
 import com.example.foodyudemy.R
 import com.example.foodyudemy.bindingadapters.RecipeRowBinding
 import com.example.foodyudemy.databinding.FragmentOverviewBinding
 import com.example.foodyudemy.models.Result
+import com.example.foodyudemy.util.Constants.Companion.RECIPE_RESULT_KEY
 
 class OverviewFragment : Fragment() {
 
     private var _binding: FragmentOverviewBinding? = null
     private val binding get() = _binding!!
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

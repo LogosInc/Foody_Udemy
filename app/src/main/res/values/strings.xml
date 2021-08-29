@@ -42,5 +42,8 @@
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
     <string name="error">Error</string>
     <string name="share">Share</string>
+    <string name="_100">100</string>
+    <string name="title">Title</string>
+    <string name="_45">45</string>
 
 </resources>

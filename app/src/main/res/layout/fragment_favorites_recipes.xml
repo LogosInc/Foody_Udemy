@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="mainViewModel"
             type="com.example.foodyudemy.viewmodels.MainViewModel" />
+
         <variable
             name="mAdapter"
             type="com.example.foodyudemy.adapters.FavoriteRecipeAdapter" />
